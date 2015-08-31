@@ -1,7 +1,7 @@
 {
-  "name": "basecoat",
-  "version": "0.0.13",
-  "repository": "https://bitbucket.org/juancamiloestela/basecoat",
+  "name": "basecoat-css-com",
+  "version": "0.0.0",
+  "repository": "https://bitbucket.org/juancamiloestela/BasecoatCSS-com",
   "dependencies": {},
   "devDependencies": {
     "assemble": "^0.4.42",

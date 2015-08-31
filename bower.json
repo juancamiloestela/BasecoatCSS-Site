@@ -1,34 +1,13 @@
 {
-  "name": "basecoat",
-  "description": "The front-end framework for artists",
-  "keywords": [
-    "css",
-    "js",
-    "responsive",
-    "front-end",
-    "less",
-    "mobile-first",
-    "framework",
-    "web",
-    "phone-gap"
-  ],
+  "name": "basecoat-css-com",
+  "description": "BasecoatCSS website",
   "homepage": "http://basecoatcss.com",
   "license": "MIT",
-  "version": "0.0.13",
-  "main": [
-    "src/less/basecoat.less",
-    "build/js/basecoat.min.js"
-  ],
-  "ignore": [
-    ".jshintrc",
-    "**/*.txt"
-  ],
+  "version": "0.0.0",
   "dependencies": {
     "modernizr": "latest",
-    "normalize-css": "3.0.1",
-    "components-font-awesome": "latest"
-  },
-  "devDependencies": {
-    "prism": "~1.0.1"
+    "components-font-awesome": "latest",
+    "prism": "~1.0.1",
+    "basecoat-css": "*"
   }
 }

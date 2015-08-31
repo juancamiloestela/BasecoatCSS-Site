@@ -11,6 +11,7 @@
 - add to bower system
 - analitics code
 - ab testing
+- font lighter not visible on windows
 
 
 

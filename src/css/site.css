@@ -1,9 +1,8 @@
 body {
   font-family: 'Raleway';
-  font-weight: lighter;
   font-size: 0.9em;
 }
-.peek-container > .layout-rows {
+.main-container > .layout-rows {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -86,6 +85,15 @@ code[class*="language-"] .token .attr-name,
 pre[class*="language-"] .token .attr-name {
   color: #96C33B;
 }
+@-webkit-keyframes pulse {
+  0%,
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
 @keyframes pulse {
   0%,
   49% {
@@ -105,7 +113,9 @@ pre[class*="language-"] .token .attr-name {
   font-size: 0.37em;
 }
 .section-title .caret {
+  -webkit-animation: pulse 1s infinite;
   animation: pulse 1s infinite;
+  -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
 }
 .chat {
@@ -165,40 +175,48 @@ pre[class*="language-"] .token .attr-name {
   top: 0;
   right: -1em;
 }
-.test-container .columns > * {
-  background-color: #F7F0FD;
-  border: 1px solid #D5BEEA;
-  margin-top: 0.3em;
-  margin-bottom: 0.3em;
-  border-radius: 0.3em;
-  text-align: center;
-}
+/*.test-container{
+	.columns{
+
+		& > *{
+			background-color: #F7F0FD;
+			border: 1px solid #D5BEEA;
+			margin-top: 0.3em;
+			margin-bottom: 0.3em;
+			border-radius: 0.3em;
+			text-align: center;
+		}
+	}
+}*/
 body {
-  background-color: #333;
-}
-.peek-container {
   background-color: #fff;
 }
-.peek-right-content {
-  padding-left: 1em;
-  box-sizing: border-box;
-}
-.peek-right-content a:not(.button):hover {
-  text-decoration: none;
-}
-.peek-right-content .close {
-  font-size: 3em;
-  text-align: right;
-  display: block;
-  padding: 0.2em 0.3em;
-  color: #fff;
-}
-.peek-right-content .side-nav a {
-  display: block;
-  color: #fff;
-  line-height: 2.5em;
-  margin-right: 1em;
-}
+/*.peek-right-content{
+	padding-left: 1em;
+	box-sizing: border-box;
+
+	a:not(.button):hover{
+		text-decoration: none;
+	}
+
+	.close{
+		font-size: 3em;
+		text-align: right;
+		display: block;
+		padding: 0.2em 0.3em;
+		color: #fff;
+	}
+
+	.side-nav{
+
+		a{
+			display:block;
+			color: #fff;
+			line-height: 2.5em;
+			margin-right: 1em;
+		}
+	}
+}*/
 footer {
   padding: 0.7em 0;
   font-size: 0.9em;
@@ -215,7 +233,10 @@ footer .github a {
   margin-left: 1em;
 }
 .side-nav a {
+  transition: -webkit-transform 200ms ease-in;
   transition: transform 200ms ease-in;
+  -webkit-transform: translateX(60px);
+  -ms-transform: translateX(60px);
   transform: translateX(60px);
 }
 @media only screen and (max-width: 40em) {
@@ -460,4 +481,4 @@ header{
 		}
 	}
 }*/
-/*# sourceMappingURL=basecoat.css.map */
+/*# sourceMappingURL=site.css.map */

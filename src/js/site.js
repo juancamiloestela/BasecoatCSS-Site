@@ -16,7 +16,7 @@
 		alert(funnyMessages[i]);
 	});
 
-	Peekjs.onOpenRight(function(){
+	/*Peekjs.onOpenRight(function(){
 		$('.side-nav a').sequence({
 			offset: 30,
 			properties: {
@@ -27,5 +27,10 @@
 
 	Peekjs.onCloseRight(function(){
 		$('.side-nav a').removeAttr('style');
+	});*/
+
+	// allow code sample areas to scroll horizontally without peeking
+	$('pre').on('touchmove', function(e){
+		e.stopPropagation();
 	});
 })();

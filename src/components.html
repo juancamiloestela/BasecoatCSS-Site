@@ -34,8 +34,8 @@
     <link href="bower_components/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="bower_components/prism/themes/prism.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/basecoat.css">
-    <link rel="stylesheet" href="app-oldie.css">
+    <link rel="stylesheet" href="bower_components/basecoat-css/src/css/basecoat.min.css">
+    <link rel="stylesheet" href="bower_components/basecoat-css/src/css/basecoat-old-----ie.css">
     <!--[if gt IE 8]><!-->
     <!-- build:css css/basecoat.min.css -->
     <!--link rel="stylesheet" href="css/basecoat.css"-->
@@ -51,7 +51,7 @@
     <!-- endbuild -->
 
     <!-- build:css css/rounded.min.css -->
-    <link rel="stylesheet" href="css/coats/rounded.css">
+    <link rel="stylesheet" href="bower_components/basecoat-rounded/dist/css/basecoat-rounded.min.css">
     <!-- endbuild -->
 
     <!-- build:css css/fancy.min.css -->
@@ -67,13 +67,13 @@
     <!-- endbuild -->
 </head>
 
-<body class="peek-effect-door">
+<body>
     <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-    <div class="peek-left-content">
-        <a href="#" class="close peek-toggle-left">&#xD7;</a>
+    <!--div class="peek-left-content">
+        <a href="#" class="close peek-toggle-left">&times;</a>
         <ul>
             <li><a href="#about">About</a></li>
         </ul>
@@ -84,7 +84,7 @@
     </div>
 
     <div class="peek-right-content">
-        <a href="#" class="close peek-toggle-right">&#xD7;</a>
+        <a href="#" class="close peek-toggle-right">&times;</a>
 
         <nav class="side-nav">
             <a href="getting-started.html">Getting Started</a>
@@ -97,9 +97,9 @@
             <a href="faq.html">FAQ</a>
             <a href="download.html" class="primary button">Download</a>
         </nav>
-    </div>
+    </div-->
 
-    <div class="peek-container">
+    <div class="main-container">
         <div class="layout-rows">
             <div class="layout-content-fluid">
                 <header class="four unpadded columns">
@@ -417,119 +417,7 @@ $(&apos;.my-select&apos;).select();
 </code></pre>
 
                 
-                    <a id="peekjs"></a>
-<h4 class="section-header">PeekJS</h4>
-
-<p>Peekjs gives you a full fledged off canvas menu that is triggered by css classes and also provides touch controlled animations on mobile devices. The effects have been abstracted so that you can choose the way the off canvas content is shown by applying the desired coat.</p>
-
-<h5>Try it!</h5>
-<a href="#" class="color1 button peek-toggle-left">Toggle Left Menu</a>
-<a href="#" class="color1 button peek-toggle-right">Toggle Right Menu</a>
-
-<h5>Usage</h5>
-<p>To use peekjs, your layout must have a specific structure. In your <code>&lt;body&gt;</code> you must set the class that defines which effect to use.</p>
-
-<pre><code class="language-markup">
-&lt;body class=&quot;peek-effect-door&quot;&gt;
-</code></pre>
-
-<p>Right inside the <code>&lt;body&gt;</code> tag you must define one or two containers that will have the off canvas content. These will hold your off canvas content.</p>
-
-<pre><code class="language-markup">
-&lt;body class=&quot;peek-effect-door&quot;&gt;
-    &lt;div class=&quot;peek-left&quot;&gt;
-        &lt;a href=&quot;#&quot; class=&quot;peek-toggle-left&quot;&gt;Close&lt;/a&gt;
-        This is your off canvas content shown on the left
-    &lt;/div&gt;
-
-    &lt;div class=&quot;peek-right&quot;&gt;
-        &lt;a href=&quot;#&quot; class=&quot;peek-toggle-right&quot;&gt;Close&lt;/a&gt;
-        This is your off canvas content shown on the right
-    &lt;/div&gt;
-</code></pre>
-
-<p>At the same level of the peek left and right containers you must now define a <code>peek-container</code>. This element will crop the page during peek events. This allows us to have content inside it that behaves as if it had position fixed, but it won&apos;t screw up when filling forms on iOS. In this example we have set up a fixed header. If we wanted the header to scroll with the rest of the content we would move it into the next required element, the container with class <code>peek-scroll-mask</code>. Inside this container you can place all the content of your page.</p>
-
-<pre><code class="language-markup">
-&lt;body class=&quot;peek-effect-door&quot;&gt;
-    &lt;div class=&quot;peek-left&quot;&gt;
-        &lt;a href=&quot;#&quot; class=&quot;peek-toggle-left&quot;&gt;Close&lt;/a&gt;
-        This is your off canvas content shown on the left
-    &lt;/div&gt;
-
-    &lt;div class=&quot;peek-right&quot;&gt;
-        &lt;a href=&quot;#&quot; class=&quot;peek-toggle-right&quot;&gt;Close&lt;/a&gt;
-        This is your off canvas content shown on the right
-    &lt;/div&gt;
-
-    &lt;div class=&quot;peek-container&quot;&gt;
-        Your page
-    &lt;/div&gt;
-</code></pre>
-
-<p>At the end of the document you can optionally set the curtain element that will cover the page content when the user is peeking off canvas. You can create it if you need a custom curtain, if not, peekjs will create a default one.</p>
-
-<pre><code class="language-markup">
-    &lt;div class=&quot;peek-overlay&quot;&gt;&lt;/div&gt;
-&lt;/body&gt;
-</code></pre>
-
-<h5>Peek Controls</h5>
-
-<p>To peek into the off canvas containers you can set on any element the <code>class=&quot;peek-toggle-right/left&quot;</code> and when these elements are clicked, the content will be shown. To control it via js you can call the exposed Peekjs methods.</p>
-
-<pre><code class="language-markup">
-&lt;a href=&quot;#&quot; class=&quot;peek-toggle-right&quot;&gt;Toggle Menu&lt;/a&gt;
-&lt;a href=&quot;#&quot; onclick=&quot;Peekjs.openRight();&quot;&gt;Open Menu&lt;/a&gt;
-</code></pre>
-
-<table>
-    <tr>
-        <th>Method</th>
-        <th>Description</th>
-    </tr>
-    <tr>
-        <td><code>Peekjs.openLeft();</code></td>
-        <td>Opens the left container</td>
-    </tr>
-    <tr>
-        <td><code>Peekjs.openRight();</code></td>
-        <td>Opens the right container</td>
-    </tr>
-    <tr>
-        <td><code>Peekjs.closeLeft();</code></td>
-        <td>Closes the left container</td>
-    </tr>
-    <tr>
-        <td><code>Peekjs.closeRight();</code></td>
-        <td>Closes the right container</td>
-    </tr>
-    <tr>
-        <td><code>Peekjs.toggleLeft();</code></td>
-        <td>Toggles the left container</td>
-    </tr>
-    <tr>
-        <td><code>Peekjs.toggleRight();</code></td>
-        <td>Toggles the right container</td>
-    </tr>
-    <tr>
-        <td><code>Peekjs.closeAll();</code></td>
-        <td>Closes all containers</td>
-    </tr>
-</table>
-
-<h5>Hide Content on Peek</h5>
-<p>To hide elements (eg. a floating header) when the user peeks, just give the elements you wish to hide the class <code>class=&quot;peek-hide-on-peek&quot;</code>.</p>
-
-<h5>Customizing the effect</h5>
-<p>Peekjs comes with 4 effects, to define an effect you do it via a class on the <code>&lt;body&gt;</code> tag. The effects are &apos;peek-effect-door&apos;, &apos;peek-effect-minimize&apos;, &apos;peek-effect-lay-down&apos; and no class for the default effect.</p>
-
-<a href="#" class="color1 button" onclick="document.body.className=document.body.className.replace(/peek-effect-[a-z-]+/, &apos; &apos;);Peekjs.openRight();">Open Right Default</a>
-<a href="#" class="color1 button" onclick="document.body.className=document.body.className.replace(/peek-effect-[a-z-]+/, &apos; &apos;) + &apos; peek-effect-door&apos;;Peekjs.openRight();">Open Right Door</a>
-<a href="#" class="color1 button" onclick="document.body.className=document.body.className.replace(/peek-effect-[a-z-]+/, &apos; &apos;) + &apos; peek-effect-minimize&apos;;Peekjs.openRight();">Open Right Minimize</a>
-<a href="#" class="color1 button" onclick="document.body.className=document.body.className.replace(/peek-effect-[a-z-]+/, &apos; &apos;) + &apos; peek-effect-lay-down&apos;;Peekjs.openRight();">Open Right Lay Down</a>
-
-<p>When the user peeks, the <code>&lt;body&gt;</code> gets a set of classes that can be used to design your preferred transition. When peeking via a button click, or a js method. The body will get a class of <code>peek-open-left/right</code>. When peeking on a mobile device via drag, you will get two additional classes, <code>peek-transitioning</code> and <code>peek-opening/closing-transition</code>.</p>
+                    Template peekjs not found
                 
                     <a id="sequencejs"></a>
 <h4 class="section-header">SequenceJS</h4>
@@ -988,7 +876,7 @@ Hover to open a
 		<div class="example">
 			<span class="tooltip">
 				<em>Colored Tooltip</em>
-				<div class="primary message" style="width:24em;">
+				<div class="primary message" style="width:20em;">
 					This is a very cool tooltip with a very cool <a href="#" class="button">Button</a>
 				</div>
 			</span> with custom width
@@ -997,7 +885,7 @@ Hover to open a
 			<pre><code class="language-markup">
 &lt;span class=&quot;tooltip&quot;&gt;
 	&lt;em&gt;Colored Tooltip&lt;/em&gt;
-	&lt;div class=&quot;primary message&quot; style=&quot;width:24em;&quot;&gt;
+	&lt;div class=&quot;primary message&quot; style=&quot;width:20em;&quot;&gt;
 		This is a very cool tooltip with a very cool &lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Button&lt;/a&gt;
 	&lt;/div&gt;
 &lt;/span&gt; with custom width
@@ -1059,15 +947,7 @@ Hover to open a
     <script>window.jQuery || document.write('<script src="assets/js/jquery-1.10.2.min.js"><\/script>')</script>
 
     <!-- build:js js/basecoat.min.js -->
-    <script src="js/basecoat.js"></script>
-    <script src="js/console.js"></script>
-    <script src="js/checkbox.js"></script>
-    <script src="js/dismissable.js"></script>
-    <script src="js/elevator.js"></script>
-    <script src="js/peek.js"></script>
-    <script src="js/select.js"></script>
-    <script src="js/broken.js"></script>
-    <script src="js/sequence.js"></script>
+    <script src="bower_components/basecoat-css/src/js/basecoat-css.min.js"></script>
     <!-- endbuild -->
 
     <!-- build:js js/scripts.min.js -->

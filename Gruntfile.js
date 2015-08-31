@@ -23,18 +23,7 @@ module.exports = function(grunt) {
 		less: {
 			css: {
 				files: {
-					'<%= dev %>/css/<%= pkg.name %>.css': '<%= dev %>/less/<%= pkg.name %>.less',
-					'<%= dev %>/css/site.css': '<%= dev %>/less/site.less',
-					// Components
-					'<%= dev %>/css/components/checkboxjs.css': '<%= dev %>/less/components/checkboxjs.less',
-					'<%= dev %>/css/components/selectjs.css': '<%= dev %>/less/components/selectjs.less',
-					'<%= dev %>/css/components/peekjs.css': '<%= dev %>/less/components/peekjs.less',
-					// Coats
-					'<%= dev %>/css/coats/colors.css': '<%= dev %>/less/coats/colors.less',
-					'<%= dev %>/css/coats/fonts.css': '<%= dev %>/less/coats/fonts.less',
-					'<%= dev %>/css/coats/pressable.css': '<%= dev %>/less/coats/pressable.less',
-					'<%= dev %>/css/coats/rounded.css': '<%= dev %>/less/coats/rounded.less',
-					'<%= dev %>/css/coats/fancy.css': '<%= dev %>/less/coats/fancy.less'
+					'<%= dev %>/css/site.css': '<%= dev %>/less/site.less'
 				},
 				options: {
 					//compress: true,
@@ -54,30 +43,7 @@ module.exports = function(grunt) {
 			},
 			css: {
 				files: {
-					'<%= dev %>/css/<%= pkg.name %>.css': '<%= dev %>/css/<%= pkg.name %>.css',
-					// Components
-					'<%= dev %>/css/components/checkboxjs.css': '<%= dev %>/css/components/checkboxjs.css',
-					'<%= dev %>/css/components/selectjs.css': '<%= dev %>/css/components/selectjs.css',
-					'<%= dev %>/css/components/peekjs.css': '<%= dev %>/css/components/peekjs.css',
-					// Coats
-					'<%= dev %>/css/coats/colors.css': '<%= dev %>/css/coats/colors.css',
-					'<%= dev %>/css/coats/fonts.css': '<%= dev %>/css/coats/fonts.css',
-					'<%= dev %>/css/coats/pressable.css': '<%= dev %>/css/coats/pressable.css',
-					'<%= dev %>/css/coats/rounded.css': '<%= dev %>/css/coats/rounded.css'
-				}
-			}
-		},
-
-		stripmq: {
-			//Viewport options 
-			options: {
-				width: 1000,
-				type: 'screen'
-			},
-			all: {
-				files: {
-				//follows the pattern 'destination': ['source'] 
-				'<%= dev %>/css/<%= pkg.name %>-oldie.css': ['<%= dev %>/css/<%= pkg.name %>.css']
+					'<%= dev %>/css/site.css': '<%= dev %>/css/site.css'
 				}
 			}
 		},
@@ -165,23 +131,29 @@ module.exports = function(grunt) {
 		},
 
 		version: {
-			options: {
-				release: 'patch'
+			options:{
+				prefix: '(\\* |")?[Vv]ersion[\'"]?\\s*[:=]?\\s*[\'"]?'
+			},
+			defaults: {
+				src: ['bower.json', '<%= dev %>/src/*.js', '<%= dev %>/less/*.less']
 			},
 			patch: {
-				src: ['package.json', 'bower.json', '<%= prod %>/js/*.js']
+				options: {
+					release: 'patch'
+				},
+				src: ['package.json', 'bower.json', '<%= dev %>/src/*.js', '<%= dev %>/less/*.less']
 			},
 			minor:{
 				options: {
 					release: 'minor'
 				},
-				src: ['package.json', 'bower.json', '<%= prod %>/js/*.js']
+				src: ['package.json', 'bower.json', '<%= dev %>/src/*.js', '<%= dev %>/less/*.less']
 			},
 			major:{
 				options: {
 					release: 'major'
 				},
-				src: ['package.json', 'bower.json', '<%= prod %>/js/*.js']
+				src: ['package.json', 'bower.json', '<%= dev %>/src/*.js', '<%= dev %>/less/*.less']
 			}
 		},
 
@@ -190,7 +162,7 @@ module.exports = function(grunt) {
 			less: {
 				// We watch and compile less files as normal but don't live reload here
 				files: ['<%= dev %>/less/**/*.less', '<%= dev %>/html/**/*.hbs'],
-				tasks: ['less', 'autoprefixer', 'stripmq', 'assemble', 'sampleCode']
+				tasks: ['default']
 			}
 		}
 	});
@@ -210,12 +182,11 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-version');
 	grunt.loadNpmTasks('assemble');
 	grunt.loadNpmTasks('grunt-newer');
-	grunt.loadNpmTasks('grunt-stripmq');
 	grunt.loadTasks('tasks');
 
 	// Default task(s).
-	grunt.registerTask('default', ['jshint', 'less', 'autoprefixer', 'stripmq', 'newer:assemble', 'sampleCode']);
-	grunt.registerTask('build', ['default', 'assemble', 'clean', 'copy:main', 'useminPrepare', 'concat', 'uglify', 'cssmin', 'usemin', 'version:patch']);
+	grunt.registerTask('default', ['jshint', 'version:defaults', 'less', 'autoprefixer', 'assemble', 'sampleCode']);
+	grunt.registerTask('build', ['version:patch', 'default', 'clean', 'copy:main', 'useminPrepare', 'concat', 'uglify', 'cssmin', 'usemin']);
 	grunt.registerTask('minor', ['build', 'version:minor']);
 	grunt.registerTask('major', ['build', 'version:major']);
 };

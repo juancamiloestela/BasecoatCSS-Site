@@ -34,8 +34,8 @@
     <link href="bower_components/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="bower_components/prism/themes/prism.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/basecoat.css">
-    <link rel="stylesheet" href="app-oldie.css">
+    <link rel="stylesheet" href="bower_components/basecoat-css/src/css/basecoat.min.css">
+    <link rel="stylesheet" href="bower_components/basecoat-css/src/css/basecoat-old-----ie.css">
     <!--[if gt IE 8]><!-->
     <!-- build:css css/basecoat.min.css -->
     <!--link rel="stylesheet" href="css/basecoat.css"-->
@@ -51,7 +51,7 @@
     <!-- endbuild -->
 
     <!-- build:css css/rounded.min.css -->
-    <link rel="stylesheet" href="css/coats/rounded.css">
+    <link rel="stylesheet" href="bower_components/basecoat-rounded/dist/css/basecoat-rounded.min.css">
     <!-- endbuild -->
 
     <!-- build:css css/fancy.min.css -->
@@ -67,13 +67,13 @@
     <!-- endbuild -->
 </head>
 
-<body class="peek-effect-door">
+<body>
     <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-    <div class="peek-left-content">
-        <a href="#" class="close peek-toggle-left">&#xD7;</a>
+    <!--div class="peek-left-content">
+        <a href="#" class="close peek-toggle-left">&times;</a>
         <ul>
             <li><a href="#about">About</a></li>
         </ul>
@@ -84,7 +84,7 @@
     </div>
 
     <div class="peek-right-content">
-        <a href="#" class="close peek-toggle-right">&#xD7;</a>
+        <a href="#" class="close peek-toggle-right">&times;</a>
 
         <nav class="side-nav">
             <a href="getting-started.html">Getting Started</a>
@@ -97,9 +97,9 @@
             <a href="faq.html">FAQ</a>
             <a href="download.html" class="primary button">Download</a>
         </nav>
-    </div>
+    </div-->
 
-    <div class="peek-container">
+    <div class="main-container">
         <div class="layout-rows">
             <div class="layout-content-fluid">
                 <header class="four unpadded columns">
@@ -240,15 +240,7 @@
     <script>window.jQuery || document.write('<script src="assets/js/jquery-1.10.2.min.js"><\/script>')</script>
 
     <!-- build:js js/basecoat.min.js -->
-    <script src="js/basecoat.js"></script>
-    <script src="js/console.js"></script>
-    <script src="js/checkbox.js"></script>
-    <script src="js/dismissable.js"></script>
-    <script src="js/elevator.js"></script>
-    <script src="js/peek.js"></script>
-    <script src="js/select.js"></script>
-    <script src="js/broken.js"></script>
-    <script src="js/sequence.js"></script>
+    <script src="bower_components/basecoat-css/src/js/basecoat-css.min.js"></script>
     <!-- endbuild -->
 
     <!-- build:js js/scripts.min.js -->
