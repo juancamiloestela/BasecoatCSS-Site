@@ -232,13 +232,21 @@ footer .github {
 footer .github a {
   margin-left: 1em;
 }
-.side-nav a {
-  transition: -webkit-transform 200ms ease-in;
-  transition: transform 200ms ease-in;
-  -webkit-transform: translateX(60px);
-  -ms-transform: translateX(60px);
-  transform: translateX(60px);
+.header-nav {
+  height: 3.4em;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  transition: height 300ms ease;
 }
+.header-nav.open {
+  height: 100%;
+}
+/*.side-nav a{
+	transition: transform 200ms ease-in;
+	transform: translateX(60px);
+}*/
 @media only screen and (max-width: 40em) {
   .seven.columns > * {
     padding: 0;

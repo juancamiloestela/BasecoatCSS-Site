@@ -16,6 +16,18 @@
 		alert(funnyMessages[i]);
 	});
 
+
+	$('.toggle-menu').on('click', function(e){
+		e.preventDefault();
+		var $header = $('.header-nav');
+
+		if ($header.hasClass('open')){
+			$header.removeClass('open');
+		}else{
+			$header.addClass('open');
+		}
+	});
+
 	/*Peekjs.onOpenRight(function(){
 		$('.side-nav a').sequence({
 			offset: 30,

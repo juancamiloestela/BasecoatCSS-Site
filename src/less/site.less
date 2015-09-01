@@ -271,10 +271,30 @@ footer{
 }
 
 
-.side-nav a{
+
+
+
+
+.header-nav{
+	height: 3.4em;
+	position: fixed;
+    width: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: height 300ms ease;
+
+    &.open{
+    	height: 100%;
+    }
+}
+
+
+
+
+/*.side-nav a{
 	transition: transform 200ms ease-in;
 	transform: translateX(60px);
-}
+}*/
 
 @media only screen and (max-width: 40em){
 	.seven.columns{
