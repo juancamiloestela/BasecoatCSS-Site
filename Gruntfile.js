@@ -54,7 +54,8 @@ module.exports = function(grunt) {
 				flatten: true,
 				layout: 'default.hbs',
 				partials: '<%= dev %>/html/partials/**/*.hbs',
-				helpers: ['helpers/**/*.js']
+				helpers: ['helpers/**/*.js'],
+				data: 'package.json'
 			},
 			page: {
 				files: {

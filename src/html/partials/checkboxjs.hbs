@@ -85,3 +85,12 @@
 <pre><code class="language-javascript">
 $('.my-checkboxes').checkbox();
 </code></pre>
+
+
+<p>Checkboxjs mirrors the state of the input element to the wrapper skin, so in case you need to change the state of the checkbox dynamically you must target the <code>&lt;input&gt;</code>, not the <code>.checkboxjs</code> element. After making all the changes you can refresh the plugin.</p>
+
+<pre><code class="language-javascript">
+$('[type="checkbox"]') // grab checkboxes
+    .attr('checked', true) // change the state
+    .data('checkboxjs').refresh(); // refresh the plugin
+</code></pre>

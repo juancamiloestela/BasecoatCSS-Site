@@ -3,11 +3,14 @@
 - ab testing
 - font lighter not visible on windows
 - height 100% on html and body, move to core?
+- License page
 
 - landing
-- getting started
 - themes
 	- demo coats
-- download
 - mobile menu
 - cross browser tests
+
+- follow tags on stackoverflow
+
+#basecoatcss
