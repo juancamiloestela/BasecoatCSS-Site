@@ -2,14 +2,15 @@
 - analitics code
 - ab testing
 - font lighter not visible on windows
-- height 100% on html and body, move to core?
 - License page
-
+- main container max-width
+- allow disabling of selectjs, checboxjs
+- color coat + add coats to repo
+- finish rounded coat on layout bars
 - landing
-- themes
-	- demo coats
 - mobile menu
 - cross browser tests
+- gettign started npm code sample on mobile width is wrong
 
 - follow tags on stackoverflow
 

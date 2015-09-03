@@ -45,15 +45,15 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
 </head>
 
-<body>
+<body class="index">
     <!--[if lt IE 8]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
     <div class="main-container">
         <div class="layout-rows">
-            <div class="layout-content-fluid header-nav">
-                <header class="four unpadded columns">
+            <header class="layout-content-fluid">
+                <div class="four unpadded columns">
                     <div>
                         <a href="index.html">
                             <img src="img/basecoat.svg" alt="Basecoat" class="logo">
@@ -71,27 +71,35 @@
                     <nav class="three wide right-aligned desktop-hide">
                         <a href="#" class="toggle-menu">MENU</a>
                     </nav>
-                </header>
-            </div>
+                </div>
+            </header>
             
 
-<div class="index layout-primary">
+<div class="layout-primary">
     <div class="layout-content-fluid">
-        <div>
+        <div class="hero">
             <h1 class="section-title">
-                <img src="img/basecoat.svg" alt="Basecoat" class="logo">
+                <!--img src="img/basecoat.svg" alt="Basecoat" class="logo"-->
+                BasecoatCSS
                 <small>Responsive base css styles for artists</small>
             </h1>
-
-            Responsive
-            Minimal
-            Lightweight
-            Easily customizable
-            Solid structure with typography as its foundation
         </div>
         <div>
 
-                <p>Layout elements in Basecoat aim to be as simple as possible. Their only purpose is to position content as desired en all screens and resolutions while keeping a coherent visual style that protects typographical balance.</p>
+            Mobile First &amp; Responsive
+            You get 3 breakpoints defined in <code>ems</code> to focus on content readability, not screen sizes.
+
+            Minimal &amp; Readable
+            The visual style proposed by Basecoat is minimalistic and neutral, focused around typography, usability and readability.
+
+            Lightweight
+            Basecoat&apos;s goal is to provide the least amount of code, with the most complete set of styles possible for a responsive site. Even if the provided visual style is beautifully minimalistic, you are not forced to use the framework&apos;s default style. You are encouraged to extend it in an easy manner.
+
+            Easily customizable
+            All styles are made with extensibility in mind. This means that all css selectors are as least specific as possible so that you can override them easily. All plugins are structured to enhance native browser controls, not replace them so js will degrade gracefully and user experience remains stable across devices.
+
+            Solid structure with typography as its foundation
+            Basecoat uses <code>ems</code> everywhere possible. This makes typography the foundation of your styles keeping elements coherently aligned around your chosen typeface. Even when resizing elements. If you change the font-size on any container, all elements inside it will be resized accordingly.
 
         </div>
     </div>

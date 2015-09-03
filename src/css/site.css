@@ -247,6 +247,18 @@ footer .github .sponsor-logo img {
 .getting-started .layout-object {
   margin: 1em 0;
 }
+.index header {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+}
+.index header > div {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.index .hero {
+  background-color: blue;
+}
 /*.side-nav a{
 	transition: transform 200ms ease-in;
 	transform: translateX(60px);
