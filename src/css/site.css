@@ -6,17 +6,18 @@ body {
   font-size: 0.9em;
   height: 100%;
 }
-.main-container {
-  height: 100%;
-}
-.main-container > .layout-rows {
-  max-width: 1440px;
-  margin: 0 auto;
-}
+/*.main-container{
+	height: 100%;
+
+	& > .layout-rows{
+		max-width: 1440px;
+		margin: 0 auto;
+	}
+}*/
 .logo {
-  height: 2.5em;
+  height: 2.25em;
 }
-.main-nav a + a {
+header .desktop-only a {
   margin: 0 0 0 0.9em;
 }
 .section-title {
@@ -25,6 +26,9 @@ body {
 .section-header {
   margin-top: 1.8em;
   max-width: 21em;
+}
+.index .container-full:first-child {
+  background-color: #EAEAEA;
 }
 .example {
   font-family: sans-serif;
@@ -195,9 +199,6 @@ pre[class*="language-"] .token .attr-name {
 		}
 	}
 }*/
-body {
-  background-color: #fff;
-}
 /*.peek-right-content{
 	padding-left: 1em;
 	box-sizing: border-box;
@@ -245,14 +246,15 @@ footer .github .sponsor-logo {
 footer .github .sponsor-logo img {
   height: 2em;
 }
-.getting-started ul pre {
+.install-options pre {
   background-color: #FEE9CC;
   padding: 1em;
   margin: 0.5em 0 1em 0;
-  max-width: 50%;
+  display: inline-block;
 }
-.getting-started .layout-object {
+.toggle-coat-control {
   margin: 1em 0;
+  max-width: 50em;
 }
 /*.side-nav a{
 	transition: transform 200ms ease-in;

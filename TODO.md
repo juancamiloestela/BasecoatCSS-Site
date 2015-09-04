@@ -4,6 +4,7 @@
 - font lighter not visible on windows
 - height 100% on html and body, move to core?
 - License page
+- check less source maps file name
 
 - landing
 - themes

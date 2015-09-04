@@ -9,23 +9,25 @@ body{
 	height: 100%;
 }
 
-.main-container{
+/*.main-container{
 	height: 100%;
 
 	& > .layout-rows{
 		max-width: 1440px;
 		margin: 0 auto;
 	}
-}
+}*/
 
 
 .logo{
-	height: 2.5em;
+	height: 2.25em;
 }
 
-.main-nav{
-	a + a{
-		margin: 0 0 0 0.9em;
+header{
+	.desktop-only{
+		a {
+			margin: 0 0 0 0.9em;
+		}
 	}
 }
 
@@ -36,6 +38,16 @@ body{
 .section-header{
 	margin-top:1.8em;
 	max-width: 21em;
+}
+
+.index{
+	.container-full:first-child{
+		background-color:#EAEAEA;
+	}
+}
+
+.hero{
+	
 }
 
 .example{
@@ -229,10 +241,6 @@ code[class*="language-"], pre[class*="language-"]{
 }*/
 
 
-body{
-	background-color: #fff;
-}
-
 /*.peek-right-content{
 	padding-left: 1em;
 	box-sizing: border-box;
@@ -288,18 +296,17 @@ footer{
 }
 
 
-.getting-started{
-	ul{
-		pre{
-			background-color:#FEE9CC;
-			padding: 1em;
-			margin: 0.5em 0 1em 0;
-			max-width: 50%;
-		}
+.install-options{
+	pre{
+		background-color:#FEE9CC;
+		padding: 1em;
+		margin: 0.5em 0 1em 0;
+		display: inline-block;
 	}
-	.layout-object{
-		margin: 1em 0;
-	}
+}
+.toggle-coat-control{
+	margin: 1em 0;
+	max-width: 50em;
 }
 
 

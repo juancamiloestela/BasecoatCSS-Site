@@ -45,18 +45,76 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
 </head>
 
-<body>
+<body class="index layout-rows">
     <!--[if lt IE 8]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-    <div class="main-container">
+    <div class="container-full">
+        <header class="four unpadded columns container">
+            <div>
+                <a href="index.html">
+                    <img src="img/basecoat.svg" alt="Basecoat" class="logo">
+                </a>
+            </div>
+            <nav class="three wide right-aligned desktop-only">
+                <a href="getting-started.html">Getting Started</a>
+                <a href="typography.html">Typography</a>
+                <a href="layout.html">Layout</a>
+                <a href="forms.html">Forms</a>
+                <a href="components.html">Components</a>
+                <a href="faq.html">FAQ</a>
+                <a href="https://github.com/juancamiloestela/BasecoatCSS/archive/master.zip" class="button">Download 1.0</a>
+            </nav>
+            <nav class="three wide right-aligned desktop-hide">
+                <a href="#" class="toggle-menu">MENU</a>
+            </nav>
+        </header>
+        
+
+    <div class="hero container">
+        <h1 class="section-title">
+            <img src="img/basecoat.svg" alt="Basecoat" class="logo">
+            <small>Responsive base css styles for artists</small>
+        </h1>
+
+        Responsive
+        Minimal
+        Lightweight
+        Easily customizable
+        Solid structure with typography as its foundation
+    </div>
+</div><!-- end header container-->
+<div class="container-full layout-primary">
+    <div class="container">
+        
+                <p>Layout elements in Basecoat aim to be as simple as possible. Their only purpose is to position content as desired en all screens and resolutions while keeping a coherent visual style that protects typographical balance.</p>
+
+    </div>
+</div>
+<div class="container-full">
+
+        <footer class="four unpadded columns container">
+            <div class="four desktop-two wide info">
+                A <a href="http://www.revolutiondynamics.co" target="_blank">Rev&#xF8;lution Dynamics</a> tool<br class="desktop-hide"> made in Colombia with &#x2665; by <a href="http://www.revolutiondynamics.co/juan-camilo-estela" target="_blank">Juan Camilo Estela</a>
+            </div>
+            <div class="four desktop-two wide github">
+                Thanks to <a href="http://www.browserstack.com" class="sponsor-logo"><img src="img/browserstack.svg" alt="BrowserStack"></a> 
+                <a class="github-button" href="https://github.com/juancamiloestela/BasecoatCSS" data-icon="octicon-star" data-count-href="/juancamiloestela/BasecoatCSS/stargazers" data-count-api="/repos/juancamiloestela/BasecoatCSS#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star juancamiloestela/BasecoatCSS on GitHub">Star</a> 
+                <a href="https://github.com/juancamiloestela/BasecoatCSS" target="_blank">Github</a> 
+                <a href="https://github.com/juancamiloestela/BasecoatCSS/issues" target="_blank">Issues</a>
+            </div>
+        </footer>
+    </div>
+
+
+    <!--div class="main-container">
         <div class="layout-rows">
             <div class="layout-content-fluid header-nav">
                 <header class="four unpadded columns">
                     <div>
                         <a href="index.html">
-                            <img src="img/basecoat.svg" alt="Basecoat" class="logo">
+                            <img src="img/basecoat.svg" alt="Basecoat" class="logo"/>
                         </a>
                     </div>
                     <nav class="main-nav three wide right-aligned desktop-only">
@@ -73,42 +131,20 @@
                     </nav>
                 </header>
             </div>
-            
-
-<div class="index layout-primary">
-    <div class="layout-content-fluid">
-        <div>
-            <h1 class="section-title">
-                <img src="img/basecoat.svg" alt="Basecoat" class="logo">
-                <small>Responsive base css styles for artists</small>
-            </h1>
-
-            Responsive
-            Minimal
-            Lightweight
-            Easily customizable
-            Solid structure with typography as its foundation
-        </div>
-        <div>
-
-                <p>Layout elements in Basecoat aim to be as simple as possible. Their only purpose is to position content as desired en all screens and resolutions while keeping a coherent visual style that protects typographical balance.</p>
-
-        </div>
-    </div>
-</div>
+            { body }
             <footer class="four columns">
                 <div class="four desktop-two wide info">
-                    A <a href="http://www.revolutiondynamics.co" target="_blank">Rev&#xF8;lution Dynamics</a> tool<br class="desktop-hide"> made in Colombia with &#x2665; by <a href="http://www.revolutiondynamics.co/juan-camilo-estela" target="_blank">Juan Camilo Estela</a>
+                    A <a href="http://www.revolutiondynamics.co" target="_blank">Revølution Dynamics</a> tool<br class="desktop-hide"> made in Colombia with &hearts; by <a href="http://www.revolutiondynamics.co/juan-camilo-estela" target="_blank">Juan Camilo Estela</a>
                 </div>
                 <div class="four desktop-two wide github">
-                    Thanks to <a href="http://www.browserstack.com" class="sponsor-logo"><img src="img/browserstack.svg" alt="BrowserStack"></a> 
+                    Thanks to <a href="http://www.browserstack.com" class="sponsor-logo"><img src="img/browserstack.svg" alt="BrowserStack" /></a> 
                     <a class="github-button" href="https://github.com/juancamiloestela/BasecoatCSS" data-icon="octicon-star" data-count-href="/juancamiloestela/BasecoatCSS/stargazers" data-count-api="/repos/juancamiloestela/BasecoatCSS#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star juancamiloestela/BasecoatCSS on GitHub">Star</a> 
                     <a href="https://github.com/juancamiloestela/BasecoatCSS" target="_blank">Github</a> 
                     <a href="https://github.com/juancamiloestela/BasecoatCSS/issues" target="_blank">Issues</a>
                 </div>
             </footer>
         </div>
-    </div>
+    </div-->
 
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

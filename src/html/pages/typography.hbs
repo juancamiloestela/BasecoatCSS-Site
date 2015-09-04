@@ -1,5 +1,6 @@
 ---
 title: Typography
+name: typography
 sections: 
     - name: Headings
     - name: Inline Elements
@@ -9,11 +10,11 @@ sections:
     - name: Links
     - name: Badges
     - name: Icons
+    - name: Colors
     - name: Helpers
 ---
 
-<div class="typography layout-primary">
-    <div class="layout-content-fluid">
+    <div class="container">
         <div class="seven columns">
             <div>&nbsp;</div>
             <div class="seven desktop-six wide">
@@ -23,6 +24,10 @@ sections:
                 </h1>
             </div>
         </div>
+    </div>
+</div><!-- end header container-->
+<div class="container-full layout-primary">
+    <div class="container">
         <div class="seven columns">
             <div>
                 <ul class="unstyled right-aligned desktop-only">
@@ -30,7 +35,6 @@ sections:
                     <li><a href="#{{chain 'lowercase' 'hyphenate' name}}">{{ name }}</a></li>
                     {{/each}}
                 </ul>
-                <a href="#" class="peek-toggle-left desktop-hide">Sections</a>
             </div>
             <div class="seven desktop-six wide">
 
@@ -45,3 +49,4 @@ sections:
         </div>
     </div>
 </div>
+<div class="container-full">

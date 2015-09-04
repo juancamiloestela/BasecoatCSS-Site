@@ -45,38 +45,34 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
 </head>
 
-<body>
+<body class="typography layout-rows">
     <!--[if lt IE 8]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-    <div class="main-container">
-        <div class="layout-rows">
-            <div class="layout-content-fluid header-nav">
-                <header class="four unpadded columns">
-                    <div>
-                        <a href="index.html">
-                            <img src="img/basecoat.svg" alt="Basecoat" class="logo">
-                        </a>
-                    </div>
-                    <nav class="main-nav three wide right-aligned desktop-only">
-                        <a href="getting-started.html">Getting Started</a>
-                        <a href="typography.html">Typography</a>
-                        <a href="layout.html">Layout</a>
-                        <a href="forms.html">Forms</a>
-                        <a href="components.html">Components</a>
-                        <a href="faq.html">FAQ</a>
-                        <a href="https://github.com/juancamiloestela/BasecoatCSS/archive/master.zip" class="button">Download 1.0</a>
-                    </nav>
-                    <nav class="three wide right-aligned desktop-hide">
-                        <a href="#" class="toggle-menu">MENU</a>
-                    </nav>
-                </header>
+    <div class="container-full">
+        <header class="four unpadded columns container">
+            <div>
+                <a href="index.html">
+                    <img src="img/basecoat.svg" alt="Basecoat" class="logo">
+                </a>
             </div>
-            
+            <nav class="three wide right-aligned desktop-only">
+                <a href="getting-started.html">Getting Started</a>
+                <a href="typography.html">Typography</a>
+                <a href="layout.html">Layout</a>
+                <a href="forms.html">Forms</a>
+                <a href="components.html">Components</a>
+                <a href="faq.html">FAQ</a>
+                <a href="https://github.com/juancamiloestela/BasecoatCSS/archive/master.zip" class="button">Download 1.0</a>
+            </nav>
+            <nav class="three wide right-aligned desktop-hide">
+                <a href="#" class="toggle-menu">MENU</a>
+            </nav>
+        </header>
+        
 
-<div class="typography layout-primary">
-    <div class="layout-content-fluid">
+    <div class="container">
         <div class="seven columns">
             <div>&#xA0;</div>
             <div class="seven desktop-six wide">
@@ -86,6 +82,10 @@
                 </h1>
             </div>
         </div>
+    </div>
+</div><!-- end header container-->
+<div class="container-full layout-primary">
+    <div class="container">
         <div class="seven columns">
             <div>
                 <ul class="unstyled right-aligned desktop-only">
@@ -106,10 +106,11 @@
                     
                     <li><a href="#icons">Icons</a></li>
                     
+                    <li><a href="#colors">Colors</a></li>
+                    
                     <li><a href="#helpers">Helpers</a></li>
                     
                 </ul>
-                <a href="#" class="peek-toggle-left desktop-hide">Sections</a>
             </div>
             <div class="seven desktop-six wide">
 
@@ -234,13 +235,13 @@
     </div>
     <div class="tablet-two columns panel-content">
         <div class="example">
-            <p>This is a paragraph to demonstrate all the inline elements with styles. For example this is <a href="#">a link</a>. An this is <strong>strong text</strong> which should look the same as <b>bold text</b>. You can also <em>emphasize text</em> or make it <i>italic</i>. If you deleted content you can show it as <strike>strikethrough text</strike>.</p>
+            <p>This is a paragraph to demonstrate all the inline elements with styles. For example this is <a href="##">a link</a>. An this is <strong>strong text</strong> which should look the same as <b>bold text</b>. You can also <em>emphasize text</em> or make it <i>italic</i>. If you deleted content you can show it as <strike>strikethrough text</strike>.</p>
 
             <p>Text can also have abbreviations like <abbr title="Federal Bureau of Investigation">FBI</abbr> or acronyms like <acronym title="as soon as possible">ASAP</acronym>. You can even show <sub>Sub</sub> text and <sup>Sup</sup> Text.</p>
         </div>
         <div class="source">
             <pre><code class="language-markup">
-&lt;p&gt;This is a paragraph to demonstrate all the inline elements with styles. For example this is &lt;a href=&quot;#&quot;&gt;a link&lt;/a&gt;. An this is &lt;strong&gt;strong text&lt;/strong&gt; which should look the same as &lt;b&gt;bold text&lt;/b&gt;. You can also &lt;em&gt;emphasize text&lt;/em&gt; or make it &lt;i&gt;italic&lt;/i&gt;. If you deleted content you can show it as &lt;strike&gt;strikethrough text&lt;/strike&gt;.&lt;/p&gt;
+&lt;p&gt;This is a paragraph to demonstrate all the inline elements with styles. For example this is &lt;a href=&quot;##&quot;&gt;a link&lt;/a&gt;. An this is &lt;strong&gt;strong text&lt;/strong&gt; which should look the same as &lt;b&gt;bold text&lt;/b&gt;. You can also &lt;em&gt;emphasize text&lt;/em&gt; or make it &lt;i&gt;italic&lt;/i&gt;. If you deleted content you can show it as &lt;strike&gt;strikethrough text&lt;/strike&gt;.&lt;/p&gt;
 
 &lt;p&gt;Text can also have abbreviations like &lt;abbr title=&quot;Federal Bureau of Investigation&quot;&gt;FBI&lt;/abbr&gt; or acronyms like &lt;acronym title=&quot;as soon as possible&quot;&gt;ASAP&lt;/acronym&gt;. You can even show &lt;sub&gt;Sub&lt;/sub&gt; text and &lt;sup&gt;Sup&lt;/sup&gt; Text.&lt;/p&gt;
         </code></pre>
@@ -492,23 +493,23 @@ if (this.is(&amp;apos;a&amp;apos;) == &amp;apos;chunk&amp;apos;){
     </div>
     <div class="tablet-two columns panel-content">
         <div class="example">
-            <a href="#">This is a Default link</a><br>
-            <a href="#" class="primary">This is a primary colored link</a><br>
-            <a href="#" class="secondary">This is a secondary colored link</a><br>
-            <a href="#" class="rewarding">This is a rewarding colored link</a><br>
-            <a href="#" class="dangerous">This is a dangerous colored link</a><br>
-            <a href="#" class="engaging">This is a engaging colored link</a><br>
-            <a href="#" class="warning">This is a warning colored link</a><br>
+            <a href="##">This is a Default link</a><br>
+            <a href="##" class="primary">This is a primary colored link</a><br>
+            <a href="##" class="secondary">This is a secondary colored link</a><br>
+            <a href="##" class="rewarding">This is a rewarding colored link</a><br>
+            <a href="##" class="dangerous">This is a dangerous colored link</a><br>
+            <a href="##" class="engaging">This is a engaging colored link</a><br>
+            <a href="##" class="warning">This is a warning colored link</a><br>
         </div>
         <div class="source">
             <pre><code class="language-markup">
-&lt;a href=&quot;#&quot;&gt;This is a Default link&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;#&quot; class=&quot;primary&quot;&gt;This is a primary colored link&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;#&quot; class=&quot;secondary&quot;&gt;This is a secondary colored link&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;#&quot; class=&quot;rewarding&quot;&gt;This is a rewarding colored link&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;#&quot; class=&quot;dangerous&quot;&gt;This is a dangerous colored link&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;#&quot; class=&quot;engaging&quot;&gt;This is a engaging colored link&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;#&quot; class=&quot;warning&quot;&gt;This is a warning colored link&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;##&quot;&gt;This is a Default link&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;##&quot; class=&quot;primary&quot;&gt;This is a primary colored link&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;##&quot; class=&quot;secondary&quot;&gt;This is a secondary colored link&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;##&quot; class=&quot;rewarding&quot;&gt;This is a rewarding colored link&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;##&quot; class=&quot;dangerous&quot;&gt;This is a dangerous colored link&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;##&quot; class=&quot;engaging&quot;&gt;This is a engaging colored link&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;##&quot; class=&quot;warning&quot;&gt;This is a warning colored link&lt;/a&gt;&lt;br&gt;
         </code></pre>
         </div>
     </div>
@@ -531,7 +532,7 @@ if (this.is(&amp;apos;a&amp;apos;) == &amp;apos;chunk&amp;apos;){
             <span class="primary badge">3</span>
             <span class="warning badge">1,954</span>
             <span class="dangerous badge">New!</span>
-            <span class="secondary badge"><i class="fa fa-camera"></i> with icon <a href="#"><i class="fa fa-times"></i></a></span>
+            <span class="secondary badge"><i class="fa fa-camera"></i> with icon <a href="##"><i class="fa fa-times"></i></a></span>
             <span class="rewarding badge"><i class="fa fa-camera"></i></span>
             <span class="warning circular badge">Sale!</span>
             <p>Inline with text <span class="primary circular badge">Deprecated</span></p>
@@ -542,7 +543,7 @@ if (this.is(&amp;apos;a&amp;apos;) == &amp;apos;chunk&amp;apos;){
 &lt;span class=&quot;primary badge&quot;&gt;3&lt;/span&gt;
 &lt;span class=&quot;warning badge&quot;&gt;1,954&lt;/span&gt;
 &lt;span class=&quot;dangerous badge&quot;&gt;New!&lt;/span&gt;
-&lt;span class=&quot;secondary badge&quot;&gt;&lt;i class=&quot;fa fa-camera&quot;&gt;&lt;/i&gt; with icon &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;secondary badge&quot;&gt;&lt;i class=&quot;fa fa-camera&quot;&gt;&lt;/i&gt; with icon &lt;a href=&quot;##&quot;&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/span&gt;
 &lt;span class=&quot;rewarding badge&quot;&gt;&lt;i class=&quot;fa fa-camera&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 &lt;span class=&quot;warning circular badge&quot;&gt;Sale!&lt;/span&gt;
 &lt;p&gt;Inline with text &lt;span class=&quot;primary circular badge&quot;&gt;Deprecated&lt;/span&gt;&lt;/p&gt;
@@ -563,6 +564,67 @@ if (this.is(&amp;apos;a&amp;apos;) == &amp;apos;chunk&amp;apos;){
     <li><a href="http://fontello.com/">Fontello</a></li>
     <li><a href="http://typicons.com/">Typicons</a></li>
 </ul>
+                
+                    <a id="colors"></a>
+<h4 class="section-header">Colors</h4>
+
+<p>Basecoat provides five versatile colors, named according to the psycological association of each color tone. The color palette for your design will most surely be custom so we encourage you to create a custom color coat that matches your needs. Color clases affect the primary property of the element but you can also use the <em>-background</em> suffix to switch the foreground/background.</p>
+
+<div class="colors-demo panel">
+    <div class="panel-title">
+        <h6>Color names</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <a href="##">Default</a>
+            <a href="##" class="primary">primary</a>
+            <a href="##" class="secondary">secondary</a>
+            <a href="##" class="rewarding">rewarding</a>
+            <a href="##" class="dangerous">dangerous</a>
+            <a href="##" class="engaging">engaging</a>
+            <a href="##" class="warning">warning</a>
+            <br>
+            <a href="##" class="secondary button">secondary</a>
+            <select class="rewarding">
+                <option>rewarding</option>
+                <option>color</option>
+            </select>
+            <div class="dangerous message">dangerous message</div>
+            <span class="tooltip">
+                Engaging colored tooltip
+                <div class="engaging message">
+                    Hello you :)
+                </div>
+            </span>
+            <div class="warning-background">warning background</div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;a href=&quot;##&quot;&gt;Default&lt;/a&gt;
+&lt;a href=&quot;##&quot; class=&quot;primary&quot;&gt;primary&lt;/a&gt;
+&lt;a href=&quot;##&quot; class=&quot;secondary&quot;&gt;secondary&lt;/a&gt;
+&lt;a href=&quot;##&quot; class=&quot;rewarding&quot;&gt;rewarding&lt;/a&gt;
+&lt;a href=&quot;##&quot; class=&quot;dangerous&quot;&gt;dangerous&lt;/a&gt;
+&lt;a href=&quot;##&quot; class=&quot;engaging&quot;&gt;engaging&lt;/a&gt;
+&lt;a href=&quot;##&quot; class=&quot;warning&quot;&gt;warning&lt;/a&gt;
+&lt;br&gt;
+&lt;a href=&quot;##&quot; class=&quot;secondary button&quot;&gt;secondary&lt;/a&gt;
+&lt;select class=&quot;rewarding&quot;&gt;
+    &lt;option&gt;rewarding&lt;/option&gt;
+    &lt;option&gt;color&lt;/option&gt;
+&lt;/select&gt;
+&lt;div class=&quot;dangerous message&quot;&gt;dangerous message&lt;/div&gt;
+&lt;span class=&quot;tooltip&quot;&gt;
+    Engaging colored tooltip
+    &lt;div class=&quot;engaging message&quot;&gt;
+        Hello you :)
+    &lt;/div&gt;
+&lt;/span&gt;
+&lt;div class=&quot;warning-background&quot;&gt;warning background&lt;/div&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
                 
                     <a id="helpers"></a>
 <h4 class="section-header">Helpers</h4>
@@ -605,20 +667,59 @@ if (this.is(&amp;apos;a&amp;apos;) == &amp;apos;chunk&amp;apos;){
         </div>
     </div>
 </div>
+<div class="container-full">
 
+        <footer class="four unpadded columns container">
+            <div class="four desktop-two wide info">
+                A <a href="http://www.revolutiondynamics.co" target="_blank">Rev&#xF8;lution Dynamics</a> tool<br class="desktop-hide"> made in Colombia with &#x2665; by <a href="http://www.revolutiondynamics.co/juan-camilo-estela" target="_blank">Juan Camilo Estela</a>
+            </div>
+            <div class="four desktop-two wide github">
+                Thanks to <a href="http://www.browserstack.com" class="sponsor-logo"><img src="img/browserstack.svg" alt="BrowserStack"></a> 
+                <a class="github-button" href="https://github.com/juancamiloestela/BasecoatCSS" data-icon="octicon-star" data-count-href="/juancamiloestela/BasecoatCSS/stargazers" data-count-api="/repos/juancamiloestela/BasecoatCSS#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star juancamiloestela/BasecoatCSS on GitHub">Star</a> 
+                <a href="https://github.com/juancamiloestela/BasecoatCSS" target="_blank">Github</a> 
+                <a href="https://github.com/juancamiloestela/BasecoatCSS/issues" target="_blank">Issues</a>
+            </div>
+        </footer>
+    </div>
+
+
+    <!--div class="main-container">
+        <div class="layout-rows">
+            <div class="layout-content-fluid header-nav">
+                <header class="four unpadded columns">
+                    <div>
+                        <a href="index.html">
+                            <img src="img/basecoat.svg" alt="Basecoat" class="logo"/>
+                        </a>
+                    </div>
+                    <nav class="main-nav three wide right-aligned desktop-only">
+                        <a href="getting-started.html">Getting Started</a>
+                        <a href="typography.html">Typography</a>
+                        <a href="layout.html">Layout</a>
+                        <a href="forms.html">Forms</a>
+                        <a href="components.html">Components</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="https://github.com/juancamiloestela/BasecoatCSS/archive/master.zip" class="button">Download 1.0</a>
+                    </nav>
+                    <nav class="three wide right-aligned desktop-hide">
+                        <a href="#" class="toggle-menu">MENU</a>
+                    </nav>
+                </header>
+            </div>
+            { body }
             <footer class="four columns">
                 <div class="four desktop-two wide info">
-                    A <a href="http://www.revolutiondynamics.co" target="_blank">Rev&#xF8;lution Dynamics</a> tool<br class="desktop-hide"> made in Colombia with &#x2665; by <a href="http://www.revolutiondynamics.co/juan-camilo-estela" target="_blank">Juan Camilo Estela</a>
+                    A <a href="http://www.revolutiondynamics.co" target="_blank">Revølution Dynamics</a> tool<br class="desktop-hide"> made in Colombia with &hearts; by <a href="http://www.revolutiondynamics.co/juan-camilo-estela" target="_blank">Juan Camilo Estela</a>
                 </div>
                 <div class="four desktop-two wide github">
-                    Thanks to <a href="http://www.browserstack.com" class="sponsor-logo"><img src="img/browserstack.svg" alt="BrowserStack"></a> 
+                    Thanks to <a href="http://www.browserstack.com" class="sponsor-logo"><img src="img/browserstack.svg" alt="BrowserStack" /></a> 
                     <a class="github-button" href="https://github.com/juancamiloestela/BasecoatCSS" data-icon="octicon-star" data-count-href="/juancamiloestela/BasecoatCSS/stargazers" data-count-api="/repos/juancamiloestela/BasecoatCSS#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star juancamiloestela/BasecoatCSS on GitHub">Star</a> 
                     <a href="https://github.com/juancamiloestela/BasecoatCSS" target="_blank">Github</a> 
                     <a href="https://github.com/juancamiloestela/BasecoatCSS/issues" target="_blank">Issues</a>
                 </div>
             </footer>
         </div>
-    </div>
+    </div-->
 
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

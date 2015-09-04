@@ -45,38 +45,35 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
 </head>
 
-<body>
+<body class="forms layout-rows">
     <!--[if lt IE 8]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-    <div class="main-container">
-        <div class="layout-rows">
-            <div class="layout-content-fluid header-nav">
-                <header class="four unpadded columns">
-                    <div>
-                        <a href="index.html">
-                            <img src="img/basecoat.svg" alt="Basecoat" class="logo">
-                        </a>
-                    </div>
-                    <nav class="main-nav three wide right-aligned desktop-only">
-                        <a href="getting-started.html">Getting Started</a>
-                        <a href="typography.html">Typography</a>
-                        <a href="layout.html">Layout</a>
-                        <a href="forms.html">Forms</a>
-                        <a href="components.html">Components</a>
-                        <a href="faq.html">FAQ</a>
-                        <a href="https://github.com/juancamiloestela/BasecoatCSS/archive/master.zip" class="button">Download 1.0</a>
-                    </nav>
-                    <nav class="three wide right-aligned desktop-hide">
-                        <a href="#" class="toggle-menu">MENU</a>
-                    </nav>
-                </header>
+    <div class="container-full">
+        <header class="four unpadded columns container">
+            <div>
+                <a href="index.html">
+                    <img src="img/basecoat.svg" alt="Basecoat" class="logo">
+                </a>
             </div>
-            
+            <nav class="three wide right-aligned desktop-only">
+                <a href="getting-started.html">Getting Started</a>
+                <a href="typography.html">Typography</a>
+                <a href="layout.html">Layout</a>
+                <a href="forms.html">Forms</a>
+                <a href="components.html">Components</a>
+                <a href="faq.html">FAQ</a>
+                <a href="https://github.com/juancamiloestela/BasecoatCSS/archive/master.zip" class="button">Download 1.0</a>
+            </nav>
+            <nav class="three wide right-aligned desktop-hide">
+                <a href="#" class="toggle-menu">MENU</a>
+            </nav>
+        </header>
+        
 
-<div class="forms layout-primary">
-    <div class="layout-content-fluid">
+
+    <div class="container">
         <div class="seven columns">
             <div>&#xA0;</div>
             <div class="seven desktop-six wide">
@@ -86,6 +83,10 @@
                 </h1>
             </div>
         </div>
+    </div>
+</div><!-- end header container-->
+<div class="container-full layout-primary">
+    <div class="container">
         <div class="seven columns">
             <div class="desktop-only">
                 <ul class="unstyled right-aligned">
@@ -113,12 +114,12 @@
     </div>
     <div class="tablet-two columns panel-content">
         <div class="example">
-            <a href="#" class="button">Anchor Button</a>
+            <a href="##" class="button">Anchor Button</a>
             <button>Button</button>
         </div>
         <div class="source">
             <pre><code class="language-markup">
-&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Anchor Button&lt;/a&gt;
+&lt;a href=&quot;##&quot; class=&quot;button&quot;&gt;Anchor Button&lt;/a&gt;
 &lt;button&gt;Button&lt;/button&gt;
         </code></pre>
         </div>
@@ -132,12 +133,12 @@
     </div>
     <div class="tablet-two columns panel-content">
         <div class="example">
-            <a href="#" class="button disabled">Anchor Button</a>
+            <a href="##" class="button disabled">Anchor Button</a>
             <button disabled="disabled">Button</button>
         </div>
         <div class="source">
             <pre><code class="language-markup">
-&lt;a href=&quot;#&quot; class=&quot;button disabled&quot;&gt;Anchor Button&lt;/a&gt;
+&lt;a href=&quot;##&quot; class=&quot;button disabled&quot;&gt;Anchor Button&lt;/a&gt;
 &lt;button disabled=&quot;disabled&quot;&gt;Button&lt;/button&gt;
         </code></pre>
         </div>
@@ -151,12 +152,12 @@
     </div>
     <div class="tablet-two columns panel-content">
         <div class="example">
-            <a href="#" class="button"><i class="fa fa-camera"></i> Anchor Button</a>
+            <a href="##" class="button"><i class="fa fa-camera"></i> Anchor Button</a>
             <button><i class="fa fa-camera"></i> Button</button>
         </div>
         <div class="source">
             <pre><code class="language-markup">
-&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;&lt;i class=&quot;fa fa-camera&quot;&gt;&lt;/i&gt; Anchor Button&lt;/a&gt;
+&lt;a href=&quot;##&quot; class=&quot;button&quot;&gt;&lt;i class=&quot;fa fa-camera&quot;&gt;&lt;/i&gt; Anchor Button&lt;/a&gt;
 &lt;button&gt;&lt;i class=&quot;fa fa-camera&quot;&gt;&lt;/i&gt; Button&lt;/button&gt;
         </code></pre>
         </div>
@@ -170,12 +171,12 @@
     </div>
     <div class="tablet-two columns panel-content">
         <div class="example">
-            <a href="#" class="button">Anchor Button <span class="dangerous badge">2</span></a>
+            <a href="##" class="button">Anchor Button <span class="dangerous badge">2</span></a>
             <button>Button <span class="engaging circular badge">564</span></button>
         </div>
         <div class="source">
             <pre><code class="language-markup">
-&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Anchor Button &lt;span class=&quot;dangerous badge&quot;&gt;2&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;##&quot; class=&quot;button&quot;&gt;Anchor Button &lt;span class=&quot;dangerous badge&quot;&gt;2&lt;/span&gt;&lt;/a&gt;
 &lt;button&gt;Button &lt;span class=&quot;engaging circular badge&quot;&gt;564&lt;/span&gt;&lt;/button&gt;
         </code></pre>
         </div>
@@ -189,12 +190,12 @@
     </div>
     <div class="tablet-two columns panel-content">
         <div class="example">
-            <a href="#" class="button block">Block Anchor Button</a>
+            <a href="##" class="button block">Block Anchor Button</a>
             <button class="block">Block Button</button>
         </div>
         <div class="source">
             <pre><code class="language-markup">
-&lt;a href=&quot;#&quot; class=&quot;button block&quot;&gt;Block Anchor Button&lt;/a&gt;
+&lt;a href=&quot;##&quot; class=&quot;button block&quot;&gt;Block Anchor Button&lt;/a&gt;
 &lt;button class=&quot;block&quot;&gt;Block Button&lt;/button&gt;
         </code></pre>
         </div>
@@ -209,14 +210,14 @@
     <div class="tablet-two columns panel-content">
         <div class="example">
             <p>
-                By default buttons are inline-blocks. You can place them in a paragraph like this <a href="#" class="button">Anchor Button</a>
+                By default buttons are inline-blocks. You can place them in a paragraph like this <a href="##" class="button">Anchor Button</a>
                 or this <button>Button</button> and still keep the vertical rythm.
             </p>
         </div>
         <div class="source">
             <pre><code class="language-markup">
 &lt;p&gt;
-    By default buttons are inline-blocks. You can place them in a paragraph like this &lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Anchor Button&lt;/a&gt;
+    By default buttons are inline-blocks. You can place them in a paragraph like this &lt;a href=&quot;##&quot; class=&quot;button&quot;&gt;Anchor Button&lt;/a&gt;
     or this &lt;button&gt;Button&lt;/button&gt; and still keep the vertical rythm.
 &lt;/p&gt;
         </code></pre>
@@ -232,21 +233,21 @@
     </div>
     <div class="tablet-two columns panel-content">
         <div class="example">
-            <a href="#" class="primary button">Primary Button</a><br>
-            <a href="#" class="secondary button">Secondary Button</a><br>
-            <a href="#" class="rewarding button">Rewarding Button</a><br>
-            <a href="#" class="dangerous button">Dangerous Button</a><br>
-            <a href="#" class="engaging button">Engaging Button</a><br>
-            <a href="#" class="warning button">Warning Button</a><br>
+            <a href="##" class="primary button">Primary Button</a><br>
+            <a href="##" class="secondary button">Secondary Button</a><br>
+            <a href="##" class="rewarding button">Rewarding Button</a><br>
+            <a href="##" class="dangerous button">Dangerous Button</a><br>
+            <a href="##" class="engaging button">Engaging Button</a><br>
+            <a href="##" class="warning button">Warning Button</a><br>
         </div>
         <div class="source">
             <pre><code class="language-markup">
-&lt;a href=&quot;#&quot; class=&quot;primary button&quot;&gt;Primary Button&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;#&quot; class=&quot;secondary button&quot;&gt;Secondary Button&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;#&quot; class=&quot;rewarding button&quot;&gt;Rewarding Button&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;#&quot; class=&quot;dangerous button&quot;&gt;Dangerous Button&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;#&quot; class=&quot;engaging button&quot;&gt;Engaging Button&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;#&quot; class=&quot;warning button&quot;&gt;Warning Button&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;##&quot; class=&quot;primary button&quot;&gt;Primary Button&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;##&quot; class=&quot;secondary button&quot;&gt;Secondary Button&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;##&quot; class=&quot;rewarding button&quot;&gt;Rewarding Button&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;##&quot; class=&quot;dangerous button&quot;&gt;Dangerous Button&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;##&quot; class=&quot;engaging button&quot;&gt;Engaging Button&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;##&quot; class=&quot;warning button&quot;&gt;Warning Button&lt;/a&gt;&lt;br&gt;
         </code></pre>
         </div>
     </div>
@@ -811,20 +812,20 @@ can be placed inline with text. By default inline inputs inherit the line-height
                             <option value="co">.co</option>
                             <option value="us">.us</option>
                         </select>
-                        <a href="#" class="button">Verify</a>
+                        <a href="##" class="button">Verify</a>
                     </div>
                     <div class="help">Your desired domain.</div>
                 </div>
                 <div class="form-field">
                     <label for="submit">Save</label>
-                    <a href="#" id="submit" class="button">Save</a>
-                    <a href="#">Cancel</a>
+                    <a href="##" id="submit" class="button">Save</a>
+                    <a href="##">Cancel</a>
                     <div class="help">Help message can also be placed here.</div>
                 </div>
                 <div class="right-aligned form-field">
                     <div class="help">Or here.</div>
-                    <a href="#">Cancel</a>
-                    <a href="#" id="submit" class="button">Save</a>
+                    <a href="##">Cancel</a>
+                    <a href="##" id="submit" class="button">Save</a>
                 </div>
             </form>
 
@@ -920,20 +921,20 @@ can be placed inline with text. By default inline inputs inherit the line-height
                 &lt;option value=&quot;co&quot;&gt;.co&lt;/option&gt;
                 &lt;option value=&quot;us&quot;&gt;.us&lt;/option&gt;
             &lt;/select&gt;
-            &lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Verify&lt;/a&gt;
+            &lt;a href=&quot;##&quot; class=&quot;button&quot;&gt;Verify&lt;/a&gt;
         &lt;/div&gt;
         &lt;div class=&quot;help&quot;&gt;Your desired domain.&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;form-field&quot;&gt;
         &lt;label for=&quot;submit&quot;&gt;Save&lt;/label&gt;
-        &lt;a href=&quot;#&quot; id=&quot;submit&quot; class=&quot;button&quot;&gt;Save&lt;/a&gt;
-        &lt;a href=&quot;#&quot;&gt;Cancel&lt;/a&gt;
+        &lt;a href=&quot;##&quot; id=&quot;submit&quot; class=&quot;button&quot;&gt;Save&lt;/a&gt;
+        &lt;a href=&quot;##&quot;&gt;Cancel&lt;/a&gt;
         &lt;div class=&quot;help&quot;&gt;Help message can also be placed here.&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;right-aligned form-field&quot;&gt;
         &lt;div class=&quot;help&quot;&gt;Or here.&lt;/div&gt;
-        &lt;a href=&quot;#&quot;&gt;Cancel&lt;/a&gt;
-        &lt;a href=&quot;#&quot; id=&quot;submit&quot; class=&quot;button&quot;&gt;Save&lt;/a&gt;
+        &lt;a href=&quot;##&quot;&gt;Cancel&lt;/a&gt;
+        &lt;a href=&quot;##&quot; id=&quot;submit&quot; class=&quot;button&quot;&gt;Save&lt;/a&gt;
     &lt;/div&gt;
 &lt;/form&gt;
 
@@ -1045,20 +1046,20 @@ can be placed inline with text. By default inline inputs inherit the line-height
                             <option value="co">.co</option>
                             <option value="us">.us</option>
                         </select>
-                        <a href="#" class="button">Verify</a>
+                        <a href="##" class="button">Verify</a>
                     </div>
                     <div class="help">Your desired domain.</div>
                 </div>
                 <div class="inline form-field">
                     <label for="inline-submit">Save</label>
-                    <a href="#" id="inline-submit" class="button">Save</a>
-                    <a href="#">Cancel</a>
+                    <a href="##" id="inline-submit" class="button">Save</a>
+                    <a href="##">Cancel</a>
                     <div class="help">Help message can also be placed here.</div>
                 </div>
                 <div class="right-aligned inline form-field">
                     <div class="help">Or here.</div>
-                    <a href="#">Cancel</a>
-                    <a href="#" id="inline-submit" class="button">Save</a>
+                    <a href="##">Cancel</a>
+                    <a href="##" id="inline-submit" class="button">Save</a>
                 </div>
             </form>
 
@@ -1161,20 +1162,20 @@ can be placed inline with text. By default inline inputs inherit the line-height
                 &lt;option value=&quot;co&quot;&gt;.co&lt;/option&gt;
                 &lt;option value=&quot;us&quot;&gt;.us&lt;/option&gt;
             &lt;/select&gt;
-            &lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Verify&lt;/a&gt;
+            &lt;a href=&quot;##&quot; class=&quot;button&quot;&gt;Verify&lt;/a&gt;
         &lt;/div&gt;
         &lt;div class=&quot;help&quot;&gt;Your desired domain.&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;inline form-field&quot;&gt;
         &lt;label for=&quot;inline-submit&quot;&gt;Save&lt;/label&gt;
-        &lt;a href=&quot;#&quot; id=&quot;inline-submit&quot; class=&quot;button&quot;&gt;Save&lt;/a&gt;
-        &lt;a href=&quot;#&quot;&gt;Cancel&lt;/a&gt;
+        &lt;a href=&quot;##&quot; id=&quot;inline-submit&quot; class=&quot;button&quot;&gt;Save&lt;/a&gt;
+        &lt;a href=&quot;##&quot;&gt;Cancel&lt;/a&gt;
         &lt;div class=&quot;help&quot;&gt;Help message can also be placed here.&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;right-aligned inline form-field&quot;&gt;
         &lt;div class=&quot;help&quot;&gt;Or here.&lt;/div&gt;
-        &lt;a href=&quot;#&quot;&gt;Cancel&lt;/a&gt;
-        &lt;a href=&quot;#&quot; id=&quot;inline-submit&quot; class=&quot;button&quot;&gt;Save&lt;/a&gt;
+        &lt;a href=&quot;##&quot;&gt;Cancel&lt;/a&gt;
+        &lt;a href=&quot;##&quot; id=&quot;inline-submit&quot; class=&quot;button&quot;&gt;Save&lt;/a&gt;
     &lt;/div&gt;
 &lt;/form&gt;
 
@@ -1278,20 +1279,20 @@ can be placed inline with text. By default inline inputs inherit the line-height
                             <option value="co">.co</option>
                             <option value="us">.us</option>
                         </select>
-                        <a href="#" class="button">Verify</a>
+                        <a href="##" class="button">Verify</a>
                     </div>
                     <div class="help">Your desired domain.</div>
                 </div>
                 <div class="stacked form-field">
                     <label for="stacked-submit">Save</label>
-                    <a href="#" id="stacked-submit" class="button">Save</a>
-                    <a href="#">Cancel</a>
+                    <a href="##" id="stacked-submit" class="button">Save</a>
+                    <a href="##">Cancel</a>
                     <div class="help">Help message can also be placed here.</div>
                 </div>
                 <div class="right-aligned stacked form-field">
                     <div class="help">Or here.</div>
-                    <a href="#">Cancel</a>
-                    <a href="#" id="stacked-submit" class="button">Save</a>
+                    <a href="##">Cancel</a>
+                    <a href="##" id="stacked-submit" class="button">Save</a>
                 </div>
             </form>
 
@@ -1386,20 +1387,20 @@ can be placed inline with text. By default inline inputs inherit the line-height
                 &lt;option value=&quot;co&quot;&gt;.co&lt;/option&gt;
                 &lt;option value=&quot;us&quot;&gt;.us&lt;/option&gt;
             &lt;/select&gt;
-            &lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Verify&lt;/a&gt;
+            &lt;a href=&quot;##&quot; class=&quot;button&quot;&gt;Verify&lt;/a&gt;
         &lt;/div&gt;
         &lt;div class=&quot;help&quot;&gt;Your desired domain.&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;stacked form-field&quot;&gt;
         &lt;label for=&quot;stacked-submit&quot;&gt;Save&lt;/label&gt;
-        &lt;a href=&quot;#&quot; id=&quot;stacked-submit&quot; class=&quot;button&quot;&gt;Save&lt;/a&gt;
-        &lt;a href=&quot;#&quot;&gt;Cancel&lt;/a&gt;
+        &lt;a href=&quot;##&quot; id=&quot;stacked-submit&quot; class=&quot;button&quot;&gt;Save&lt;/a&gt;
+        &lt;a href=&quot;##&quot;&gt;Cancel&lt;/a&gt;
         &lt;div class=&quot;help&quot;&gt;Help message can also be placed here.&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;right-aligned stacked form-field&quot;&gt;
         &lt;div class=&quot;help&quot;&gt;Or here.&lt;/div&gt;
-        &lt;a href=&quot;#&quot;&gt;Cancel&lt;/a&gt;
-        &lt;a href=&quot;#&quot; id=&quot;stacked-submit&quot; class=&quot;button&quot;&gt;Save&lt;/a&gt;
+        &lt;a href=&quot;##&quot;&gt;Cancel&lt;/a&gt;
+        &lt;a href=&quot;##&quot; id=&quot;stacked-submit&quot; class=&quot;button&quot;&gt;Save&lt;/a&gt;
     &lt;/div&gt;
 &lt;/form&gt;
 
@@ -1528,7 +1529,7 @@ can be placed inline with text. By default inline inputs inherit the line-height
                             <option value="co">.co</option>
                             <option value="us">.us</option>
                         </select>
-                        <a href="#" class="button">Verify</a>
+                        <a href="##" class="button">Verify</a>
                     </div>
                     <div class="help">Your desired domain.</div>
                 </div>
@@ -1537,8 +1538,8 @@ can be placed inline with text. By default inline inputs inherit the line-height
                         Save
                         <div class="help">Help can go here.</div>
                     </label>
-                    <a href="#" id="mirrored-submit" class="button">Save</a>
-                    <a href="#">Cancel</a>
+                    <a href="##" id="mirrored-submit" class="button">Save</a>
+                    <a href="##">Cancel</a>
                     <div class="help">Help message can also be placed here.</div>
                 </div>
             </form>
@@ -1659,7 +1660,7 @@ can be placed inline with text. By default inline inputs inherit the line-height
                 &lt;option value=&quot;co&quot;&gt;.co&lt;/option&gt;
                 &lt;option value=&quot;us&quot;&gt;.us&lt;/option&gt;
             &lt;/select&gt;
-            &lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Verify&lt;/a&gt;
+            &lt;a href=&quot;##&quot; class=&quot;button&quot;&gt;Verify&lt;/a&gt;
         &lt;/div&gt;
         &lt;div class=&quot;help&quot;&gt;Your desired domain.&lt;/div&gt;
     &lt;/div&gt;
@@ -1668,8 +1669,8 @@ can be placed inline with text. By default inline inputs inherit the line-height
             Save
             &lt;div class=&quot;help&quot;&gt;Help can go here.&lt;/div&gt;
         &lt;/label&gt;
-        &lt;a href=&quot;#&quot; id=&quot;mirrored-submit&quot; class=&quot;button&quot;&gt;Save&lt;/a&gt;
-        &lt;a href=&quot;#&quot;&gt;Cancel&lt;/a&gt;
+        &lt;a href=&quot;##&quot; id=&quot;mirrored-submit&quot; class=&quot;button&quot;&gt;Save&lt;/a&gt;
+        &lt;a href=&quot;##&quot;&gt;Cancel&lt;/a&gt;
         &lt;div class=&quot;help&quot;&gt;Help message can also be placed here.&lt;/div&gt;
     &lt;/div&gt;
 &lt;/form&gt;
@@ -1835,20 +1836,59 @@ can be placed inline with text. By default inline inputs inherit the line-height
         </div>
     </div>
 </div>
+<div class="container-full">
 
+        <footer class="four unpadded columns container">
+            <div class="four desktop-two wide info">
+                A <a href="http://www.revolutiondynamics.co" target="_blank">Rev&#xF8;lution Dynamics</a> tool<br class="desktop-hide"> made in Colombia with &#x2665; by <a href="http://www.revolutiondynamics.co/juan-camilo-estela" target="_blank">Juan Camilo Estela</a>
+            </div>
+            <div class="four desktop-two wide github">
+                Thanks to <a href="http://www.browserstack.com" class="sponsor-logo"><img src="img/browserstack.svg" alt="BrowserStack"></a> 
+                <a class="github-button" href="https://github.com/juancamiloestela/BasecoatCSS" data-icon="octicon-star" data-count-href="/juancamiloestela/BasecoatCSS/stargazers" data-count-api="/repos/juancamiloestela/BasecoatCSS#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star juancamiloestela/BasecoatCSS on GitHub">Star</a> 
+                <a href="https://github.com/juancamiloestela/BasecoatCSS" target="_blank">Github</a> 
+                <a href="https://github.com/juancamiloestela/BasecoatCSS/issues" target="_blank">Issues</a>
+            </div>
+        </footer>
+    </div>
+
+
+    <!--div class="main-container">
+        <div class="layout-rows">
+            <div class="layout-content-fluid header-nav">
+                <header class="four unpadded columns">
+                    <div>
+                        <a href="index.html">
+                            <img src="img/basecoat.svg" alt="Basecoat" class="logo"/>
+                        </a>
+                    </div>
+                    <nav class="main-nav three wide right-aligned desktop-only">
+                        <a href="getting-started.html">Getting Started</a>
+                        <a href="typography.html">Typography</a>
+                        <a href="layout.html">Layout</a>
+                        <a href="forms.html">Forms</a>
+                        <a href="components.html">Components</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="https://github.com/juancamiloestela/BasecoatCSS/archive/master.zip" class="button">Download 1.0</a>
+                    </nav>
+                    <nav class="three wide right-aligned desktop-hide">
+                        <a href="#" class="toggle-menu">MENU</a>
+                    </nav>
+                </header>
+            </div>
+            { body }
             <footer class="four columns">
                 <div class="four desktop-two wide info">
-                    A <a href="http://www.revolutiondynamics.co" target="_blank">Rev&#xF8;lution Dynamics</a> tool<br class="desktop-hide"> made in Colombia with &#x2665; by <a href="http://www.revolutiondynamics.co/juan-camilo-estela" target="_blank">Juan Camilo Estela</a>
+                    A <a href="http://www.revolutiondynamics.co" target="_blank">Revølution Dynamics</a> tool<br class="desktop-hide"> made in Colombia with &hearts; by <a href="http://www.revolutiondynamics.co/juan-camilo-estela" target="_blank">Juan Camilo Estela</a>
                 </div>
                 <div class="four desktop-two wide github">
-                    Thanks to <a href="http://www.browserstack.com" class="sponsor-logo"><img src="img/browserstack.svg" alt="BrowserStack"></a> 
+                    Thanks to <a href="http://www.browserstack.com" class="sponsor-logo"><img src="img/browserstack.svg" alt="BrowserStack" /></a> 
                     <a class="github-button" href="https://github.com/juancamiloestela/BasecoatCSS" data-icon="octicon-star" data-count-href="/juancamiloestela/BasecoatCSS/stargazers" data-count-api="/repos/juancamiloestela/BasecoatCSS#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star juancamiloestela/BasecoatCSS on GitHub">Star</a> 
                     <a href="https://github.com/juancamiloestela/BasecoatCSS" target="_blank">Github</a> 
                     <a href="https://github.com/juancamiloestela/BasecoatCSS/issues" target="_blank">Issues</a>
                 </div>
             </footer>
         </div>
-    </div>
+    </div-->
 
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
